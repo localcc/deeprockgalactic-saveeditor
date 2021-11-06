@@ -1,5 +1,3 @@
-
-
 pub mod deep_rock_galactic {
     use std::{array::TryFromSliceError, collections::HashMap, convert::TryInto, fs::File, io::{Write}};
     use std::error::Error;
@@ -30,6 +28,7 @@ pub mod deep_rock_galactic {
             OverclockState::Unacquired
         }
     }
+
     
     #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
     pub struct Overclock {
@@ -39,6 +38,21 @@ pub mod deep_rock_galactic {
         pub cost: Cost,
         #[serde(skip_deserializing)]
         pub state: OverclockState
+    }
+
+    #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
+    pub struct Cosmetic {
+        pub class: String,
+        pub name: String,
+        pub cost: Cost,
+        #[serde(skip_deserializing)]
+        pub state: OverclockState
+    }
+
+    #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
+    pub struct MatrixCores {
+        pub overclocks: HashMap<String, Overclock>,
+        pub cosmetics: HashMap<String, Cosmetic>
     }
     
     
@@ -119,7 +133,7 @@ pub mod deep_rock_galactic {
         pub minerals: Minerals,
         pub brewing: Brewing,
     
-        pub overclocks: HashMap<String, Overclock>,
+        pub matrix_cores: MatrixCores,
     
         buf: Vec<u8>,
     
@@ -140,7 +154,7 @@ pub mod deep_rock_galactic {
     const CREDITS_OFFSET: usize = 33;
     const PERK_POINTS_OFFSET: usize = 36;
     const GUID_LENGTH: usize = 16;
-    const OVERCLOCK_LIST_OFFSET: usize = 141;
+    const MATRIX_CORES_LIST_OFFSET: usize = 141;
 
     //Resources
     //Minerals
@@ -161,9 +175,9 @@ pub mod deep_rock_galactic {
     const ERROR_CORES: [u8; 16] = [0x58, 0x28, 0x65, 0x2C, 0x9A, 0x5D, 0xE8, 0x45, 0xA9, 0xE2, 0xE1, 0xB8, 0xB4, 0x63, 0xC5, 0x16];
     const BLANK_CORES: [u8; 16] = [0xA1, 0x0C, 0xB2, 0x85, 0x38, 0x71, 0xFB, 0x49, 0x9A, 0xC8, 0x54, 0xA1, 0xCD, 0xE2, 0x20, 0x2C];
 
-    //Overclocks
-    const OC_UNFORGED_HEADER: [u8; 66] = [0x10, 0x00, 0x00, 0x00, 0x4F, 0x77, 0x6E, 0x65, 0x64, 0x53, 0x63, 0x68, 0x65, 0x6D, 0x61, 0x74, 0x69, 0x63, 0x73, 0x00, 0x0E, 0x00, 0x00, 0x00, 0x41, 0x72, 0x72, 0x61, 0x79, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x53, 0x74, 0x72, 0x75, 0x63, 0x74, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x00];
-    const OC_UNFORGED_FOOTER: [u8; 73] = [0x10, 0x00, 0x00, 0x00, 0x4F, 0x77, 0x6E, 0x65, 0x64, 0x53, 0x63, 0x68, 0x65, 0x6D, 0x61, 0x74, 0x69, 0x63, 0x73, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x53, 0x74, 0x72, 0x75, 0x63, 0x74, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x00, 0x00, 0x47, 0x75, 0x69, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00];
+    //Matrix cores
+    const MATRIX_CORES_UNFORGED_HEADER: [u8; 66] = [0x10, 0x00, 0x00, 0x00, 0x4F, 0x77, 0x6E, 0x65, 0x64, 0x53, 0x63, 0x68, 0x65, 0x6D, 0x61, 0x74, 0x69, 0x63, 0x73, 0x00, 0x0E, 0x00, 0x00, 0x00, 0x41, 0x72, 0x72, 0x61, 0x79, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x6D, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x53, 0x74, 0x72, 0x75, 0x63, 0x74, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x00];
+    const MATRIX_CORES_UNFORGED_FOOTER: [u8; 73] = [0x10, 0x00, 0x00, 0x00, 0x4F, 0x77, 0x6E, 0x65, 0x64, 0x53, 0x63, 0x68, 0x65, 0x6D, 0x61, 0x74, 0x69, 0x63, 0x73, 0x00, 0x0F, 0x00, 0x00, 0x00, 0x53, 0x74, 0x72, 0x75, 0x63, 0x74, 0x50, 0x72, 0x6F, 0x70, 0x65, 0x72, 0x74, 0x79, 0x00, 0x20, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x05, 0x00, 0x00, 0x00, 0x47, 0x75, 0x69, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00];
 
 
     impl SaveFile {
@@ -234,29 +248,33 @@ pub mod deep_rock_galactic {
             memmem::find_iter(buf, &"PerkPoints".to_string().into_bytes()).next()
         }
 
-        fn get_overclocks_start_pos(buf: &[u8]) -> Option<usize> {
+        fn get_matrix_cores_start_pos(buf: &[u8]) -> Option<usize> {
             memmem::find_iter(buf, &"ForgedSchematics".to_string().into_bytes()).next()
         }
 
-        fn get_overlocks_end_pos(buf: &[u8]) -> Option<usize> {
+        fn get_matrix_cores_end_pos(buf: &[u8]) -> Option<usize> {
             memmem::find_iter(buf, &"bFirstSchematicMessageShown".to_string().into_bytes()).next()
         }
 
-        fn load_overclocks(buf: &[u8], guids: &str) -> Option<HashMap<String, Overclock>> {
-            let mut parsed_overclocks = serde_json::from_str::<HashMap<String, Overclock>>(guids).ok()?;
+        fn load_matrix_cores(buf: &[u8], guids: &str) -> Option<MatrixCores> {
+            let mut parsed_matrix_cores = serde_json::from_str::<MatrixCores>(guids).ok()?;
 
-            let start_pos = SaveFile::get_overclocks_start_pos(buf)?;
-            let end_pos = SaveFile::get_overlocks_end_pos(buf)?;
+            let start_pos = SaveFile::get_matrix_cores_start_pos(buf)?;
+            let end_pos = SaveFile::get_matrix_cores_end_pos(buf)?;
 
             let data_slice = &buf[start_pos..end_pos];
             
             let num_forged = u32::from_le_bytes(data_slice[63..67].try_into().ok()?); // magic numbers yay
             
             for i in 0..num_forged {
-                let uuid = hex::encode(&data_slice[OVERCLOCK_LIST_OFFSET+ (i*16) as usize ..OVERCLOCK_LIST_OFFSET+ (i*16) as usize +16]).to_uppercase();
-                
-                if let Some(overclock) = parsed_overclocks.get_mut(&uuid) {
+                let uuid = hex::encode(&data_slice[MATRIX_CORES_LIST_OFFSET+ (i*16) as usize ..MATRIX_CORES_LIST_OFFSET+ (i*16) as usize +16]).to_uppercase();
+
+                if let Some(overclock) = parsed_matrix_cores.overclocks.get_mut(&uuid) {
                     overclock.state = OverclockState::Forged;
+                }
+
+                if let Some(cosmetic) = parsed_matrix_cores.cosmetics.get_mut(&uuid) {
+                    cosmetic.state = OverclockState::Forged;
                 }
             }
 
@@ -268,13 +286,17 @@ pub mod deep_rock_galactic {
                 for i in 0..num_unforged {
                     let uuid = hex::encode(&data_slice[unforged_pos+ (i*16) as usize .. unforged_pos + (i*16) as usize + 16]).to_uppercase();
 
-                    if let Some(overclock) = parsed_overclocks.get_mut(&uuid) {
+                    if let Some(overclock) = parsed_matrix_cores.overclocks.get_mut(&uuid) {
                         overclock.state = OverclockState::Unforged;
+                    }
+
+                    if let Some(cosmetic) = parsed_matrix_cores.cosmetics.get_mut(&uuid) {
+                        cosmetic.state = OverclockState::Unforged;
                     }
                 }
             }
 
-            Some(parsed_overclocks)        
+            Some(parsed_matrix_cores)        
         }
 
         pub fn new(buf: &mut [u8], guids: &str) -> Option<Self> {
@@ -311,7 +333,7 @@ pub mod deep_rock_galactic {
             let blank_cores = SaveFile::get_resource_val(buf, resources_pos, &BLANK_CORES)?;
 
 
-            let overclocks = SaveFile::load_overclocks(buf, guids)?;
+            let matrix_cores = SaveFile::load_matrix_cores(buf, guids)?;
 
             Some(SaveFile {
                 eng_xp,
@@ -329,7 +351,7 @@ pub mod deep_rock_galactic {
                 error_cores,
                 blank_cores,
                 buf: buf.to_owned(),
-                overclocks,
+                matrix_cores,
 
                 eng_xp_pos,
                 gun_xp_pos,
@@ -361,31 +383,43 @@ pub mod deep_rock_galactic {
             Some(())
         }
 
-        fn save_overclocks(&mut self) -> Option<()> {
-            let start_pos = SaveFile::get_overclocks_start_pos(&self.buf)?;
-            let end_pos = SaveFile::get_overlocks_end_pos(&self.buf)?;
+        fn save_unforged_matrix_cores(&mut self, buf: &mut Vec<u8>) -> Option<()> {
+            let unforged_overclocks: Vec<(&String, &Overclock)> = self.matrix_cores.overclocks.iter().filter(|e| e.1.state == OverclockState::Unforged).collect();
+            let unforged_cosmetics: Vec<(&String, &Cosmetic)> = self.matrix_cores.cosmetics.iter().filter(|e| e.1.state == OverclockState::Unforged).collect();
+            let unforged_count = unforged_overclocks.len() as u32 + unforged_cosmetics.len() as u32;
 
-            let data_slice = &self.buf[start_pos..end_pos];
-
-            let num_forged = u32::from_le_bytes(data_slice[63..67].try_into().ok()?);
-            
-            let unforged: Vec<(&String, &Overclock)> = self.overclocks.iter().filter(|e| e.1.state == OverclockState::Unforged).collect();
-            let unforged_count = unforged.len() as u32;
-
-            let mut new_buf = Vec::new();
-            new_buf.extend(&self.buf[..start_pos + (num_forged as usize *16) + 141]);
             if unforged_count > 0 {
-                new_buf.extend(&OC_UNFORGED_HEADER);
-                new_buf.extend(unforged_count.to_le_bytes());
-                new_buf.extend(&OC_UNFORGED_FOOTER);
+                buf.extend(&MATRIX_CORES_UNFORGED_HEADER);
+                buf.extend(unforged_count.to_le_bytes());
+                buf.extend(&MATRIX_CORES_UNFORGED_FOOTER);
 
-                for unforged_overclock in unforged {
+                for unforged_overclock in unforged_overclocks {
                     let uuid_bytes = hex::decode(unforged_overclock.0).ok()?;
-                    new_buf.extend(uuid_bytes);
+                    buf.extend(uuid_bytes);
+                }
+
+                for unforged_cosmetic in unforged_cosmetics {
+                    let uuid_bytes = hex::decode(unforged_cosmetic.0).ok()?;
+                    buf.extend(uuid_bytes);
                 }
             }
-            new_buf.extend(&self.buf[end_pos..]);
 
+            Some(())
+        }
+
+        fn save_matrix_cores(&mut self) -> Option<()> {
+            let start_pos = SaveFile::get_matrix_cores_start_pos(&self.buf)?;
+            let end_pos = SaveFile::get_matrix_cores_end_pos(&self.buf)?;
+
+            let num_forged = u32::from_le_bytes(self.buf[start_pos+63..start_pos+67].try_into().ok()?);
+            let mut new_buf = Vec::new();
+
+            new_buf.extend(&self.buf[..start_pos + (num_forged as usize * 16) + MATRIX_CORES_LIST_OFFSET]);
+            
+            self.save_unforged_matrix_cores(&mut new_buf)?;
+
+            new_buf.extend(&self.buf[end_pos..]);
+            
             self.buf = new_buf;
             Some(())
         }
@@ -406,7 +440,7 @@ pub mod deep_rock_galactic {
             SaveFile::set_resource_val(&mut self.buf, resources_pos, &ERROR_CORES, self.error_cores);
             SaveFile::set_resource_val(&mut self.buf, resources_pos, &BLANK_CORES, self.blank_cores);
 
-            self.save_overclocks().ok_or("Failed to save overclocks!")?;
+            self.save_matrix_cores().ok_or("Failed to save overclocks!")?;
 
             file.write_all(&self.buf)?;
             Ok(())

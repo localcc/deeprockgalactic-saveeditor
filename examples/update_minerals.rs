@@ -19,7 +19,7 @@ fn main() {
     let mut file = File::open(&path).expect("Failed to open save file!");
     file.read_to_end(&mut buf).expect("Failed to read save file!");
 
-    let guids_path = Path::new("guids.json");
+    let guids_path = Path::new("matrix_cores.json");
     let mut guids_file = File::open(&guids_path).expect("Failed to open guids!");
     let mut guids = String::new();
     guids_file.read_to_string(&mut guids).expect("Failed to read guids!");
