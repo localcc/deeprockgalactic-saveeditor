@@ -99,7 +99,7 @@
     },
     "86AA0DD13FD37E43B2FBF176EE5DE815": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
       "name": "Big Bertha",
       "cost": {
         "credits": 8400,
@@ -113,8 +113,8 @@
     },
     "8C0142A687637A4EA4CC8A7F84B9610A": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
-      "name": "Carpet Bobmer",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
+      "name": "Carpet Bomber",
       "cost": {
         "credits": 7350,
         "bismor": 0,
@@ -127,7 +127,7 @@
     },
     "01E23067CBB9A6428AE4394C99F1D2BB": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
       "name": "Composite Drums",
       "cost": {
         "credits": 7850,
@@ -141,7 +141,7 @@
     },
     "3DD5E8141C483E43AA3E0708CE75D663": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
       "name": "Combat Mobility",
       "cost": {
         "credits": 7650,
@@ -155,7 +155,7 @@
     },
     "32654E9478165E4DA3F0DBD33B180341": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
       "name": "Neurotoxin Payload",
       "cost": {
         "credits": 8100,
@@ -169,7 +169,7 @@
     },
     "CB83FD6C13C63F4982DC87B9796311C8": {
       "class": "Gunner",
-      "weapon": "'Thunderhead' Heavy Autocannon",
+      "weapon": "\"Thunderhead\" Heavy Autocannon",
       "name": "Splintering Shells",
       "cost": {
         "credits": 7300,
@@ -449,7 +449,7 @@
     },
     "CD4EEC38C029724E8317CCDC22D06057": {
       "class": "Engineer",
-      "weapon": "'Warthog' Auto 210",
+      "weapon": "\"Warthog\" Auto 210",
       "name": "Light-weight Magazines",
       "cost": {
         "credits": 7250,
@@ -463,7 +463,7 @@
     },
     "338DD238332A2E4EA5490208AAD7F502": {
       "class": "Engineer",
-      "weapon": "'Warthog' Auto 210",
+      "weapon": "\"Warthog\" Auto 210",
       "name": "Stunner",
       "cost": {
         "credits": 7350,
@@ -477,7 +477,7 @@
     },
     "62D4C94C1367E8419691B677837DA4FB": {
       "class": "Engineer",
-      "weapon": "'Warthog' Auto 210",
+      "weapon": "\"Warthog\" Auto 210",
       "name": "Mini Shells",
       "cost": {
         "credits": 7700,
@@ -491,7 +491,7 @@
     },
     "70122BA2FBDABF4895DC09C90294E685": {
       "class": "Engineer",
-      "weapon": "'Warthog' Auto 210",
+      "weapon": "\"Warthog\" Auto 210",
       "name": "Cycle Overload",
       "cost": {
         "credits": 8050,
@@ -505,7 +505,7 @@
     },
     "07E9279956BF9C418EEA313E2DC59F8D": {
       "class": "Engineer",
-      "weapon": "'Warthog' Auto 210",
+      "weapon": "\"Warthog\" Auto 210",
       "name": "Magnetic Pellet Alignment",
       "cost": {
         "credits": 7900,
@@ -757,7 +757,7 @@
     },
     "2E9FBFB43B7B554FB3728780F1334824": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Compact Feed Mechanism",
       "cost": {
         "credits": 7450,
@@ -771,7 +771,7 @@
     },
     "01D4653903832F498C50F7719D58E89B": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Thinned Drum Walls",
       "cost": {
         "credits": 7650,
@@ -785,7 +785,7 @@
     },
     "FBB1014758606A41888E378F69E3CD61": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Exhaust Vectoring",
       "cost": {
         "credits": 7400,
@@ -799,7 +799,7 @@
     },
     "7CD10E2C55583041B577141C854BEE62": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Lead Storm",
       "cost": {
         "credits": 8800,
@@ -813,7 +813,7 @@
     },
     "B55D6170EEA5D743AC4B28293C0C4673": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "A little more oomph!",
       "cost": {
         "credits": 8700,
@@ -827,7 +827,7 @@
     },
     "63156673F2174F449F598F8729AC0C65": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Burning Hell",
       "cost": {
         "credits": 8700,
@@ -841,7 +841,7 @@
     },
     "ED4036806A69E848BC72DDE3CDEAC456": {
       "class": "Gunner",
-      "weapon": "'Lead Storm' Powered Minigun",
+      "weapon": "\"Lead Storm\" Powered Minigun",
       "name": "Bullet Hell",
       "cost": {
         "credits": 7600,
@@ -855,7 +855,7 @@
     },
     "ECCAB2551405F044A93FFB6C51FF9B39": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "Hydrogen Ion Additive",
       "cost": {
         "credits": 8800,
@@ -869,7 +869,7 @@
     },
     "4956672BA68D3A439D4EC260F0B98CE4": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "AG Mixture",
       "cost": {
         "credits": 7800,
@@ -883,7 +883,7 @@
     },
     "C1D77A8BAFD433408E4A8397F1A63AEC": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "Disperser Compound",
       "cost": {
         "credits": 8800,
@@ -897,7 +897,7 @@
     },
     "4CCC7E994163A14AAAC97AB3777FF1F9": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "Goo Bomber Special",
       "cost": {
         "credits": 7450,
@@ -911,7 +911,7 @@
     },
     "539F16D0ECA50447B21BD3B1ADD439CB": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "Volatile Impact Mixture",
       "cost": {
         "credits": 8500,
@@ -925,7 +925,7 @@
     },
     "EA7D273B56099B4B9F44768A099A8C1C": {
       "class": "Driller",
-      "weapon": "FIXMEGooCannon",
+      "weapon": "Corrosive Sludge Pump",
       "name": "Sludge Blast",
       "cost": {
         "credits": 8200,
@@ -939,7 +939,7 @@
     },
     "EE5713FA91A0E245A1C0BFCE15212074": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "Compact Rounds",
       "cost": {
         "credits": 7900,
@@ -953,7 +953,7 @@
     },
     "A97694E1A9B7484EB66E14DBF830DB6B": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "Pack Rat",
       "cost": {
         "credits": 7950,
@@ -967,7 +967,7 @@
     },
     "87D2434388D3FC45884E351DCBE70F7C": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "Fat Boy",
       "cost": {
         "credits": 8300,
@@ -981,7 +981,7 @@
     },
     "B912059A3F86E44BA2985450D136CCB5": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "Clean Sweep",
       "cost": {
         "credits": 8100,
@@ -995,7 +995,7 @@
     },
     "DB7EC788B46FCE4C9800A25010A0E8EA": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "RJ250 Compound",
       "cost": {
         "credits": 8800,
@@ -1009,7 +1009,7 @@
     },
     "BC4CD684621BF6449607373A534A574F": {
       "class": "Engineer",
-      "weapon": "Deepcore 40mm PGL",
+      "weapon": "DeepCore 40mm PGL",
       "name": "Hyper Propellant",
       "cost": {
         "credits": 8950,
@@ -1121,7 +1121,7 @@
     },
     "8884ED69B093E44681F36C74FD1E772F": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Executioner",
       "cost": {
         "credits": 8750,
@@ -1135,7 +1135,7 @@
     },
     "538A52E774FCB24C85E5F7F1CE63E3FA": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Eraser",
       "cost": {
         "credits": 8000,
@@ -1149,7 +1149,7 @@
     },
     "B63D1376D90DDD4C986851D791E737AB": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Armor Break Module",
       "cost": {
         "credits": 7850,
@@ -1163,7 +1163,7 @@
     },
     "798B9546AB16B34CAD766DAB554150D9": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Seeker Rounds",
       "cost": {
         "credits": 8150,
@@ -1177,7 +1177,7 @@
     },
     "6FA83E783551F54A97BC04F09DF1A842": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Explosive Chemical Rounds",
       "cost": {
         "credits": 8500,
@@ -1191,7 +1191,7 @@
     },
     "956BB51F4D8F254291A0C0E740BD07CF": {
       "class": "Engineer",
-      "weapon": "FIXMELockOnRifle",
+      "weapon": "LOK-1 Smart Rifle",
       "name": "Neuro-Lasso",
       "cost": {
         "credits": 8950,
@@ -1205,7 +1205,7 @@
     },
     "2A257648DF688844BA3DB091A3756BA5": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Overtuned Feed Mechanism",
       "cost": {
         "credits": 8950,
@@ -1219,7 +1219,7 @@
     },
     "1E41880C9E18FC439B82B69F19F0A191": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Fragmentation Missiles",
       "cost": {
         "credits": 7150,
@@ -1233,7 +1233,7 @@
     },
     "C24639FB04A00949BE8F00CD38462B84": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Jet Fuel Homebrew",
       "cost": {
         "credits": 7250,
@@ -1247,7 +1247,7 @@
     },
     "52DE47B5A2579E418564F19382240866": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Salvo Module",
       "cost": {
         "credits": 8650,
@@ -1261,7 +1261,7 @@
     },
     "01CD9AAD2398FB46818A3F6F6A96384A": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Plasma Burster Missiles",
       "cost": {
         "credits": 8500,
@@ -1275,7 +1275,7 @@
     },
     "C873E29A463E4F4DAD4821D92BC31FB4": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Minelayer System",
       "cost": {
         "credits": 7500,
@@ -1289,7 +1289,7 @@
     },
     "8E6816C3DAEE2C49B93E8FA67CF13B1A": {
       "class": "Gunner",
-      "weapon": "FIXMEMicroMissileLauncher",
+      "weapon": "\"HURRICANE\" Guided Rocket System",
       "name": "Manual Guidance Cutoff",
       "cost": {
         "credits": 7050,
@@ -1387,7 +1387,7 @@
     },
     "9225769777355041BDEB70CACD946A27": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Overtuned Particle Accelerator",
       "cost": {
         "credits": 7200,
@@ -1401,7 +1401,7 @@
     },
     "00EA09DA14DA7646982DD5A1B2467A08": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Thermal Liquid Coolant",
       "cost": {
         "credits": 8100,
@@ -1415,7 +1415,7 @@
     },
     "5ABF1C487BF3BD4BAFDAF2A4428720EC": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Rewiring Mod",
       "cost": {
         "credits": 8200,
@@ -1429,7 +1429,7 @@
     },
     "D831B000F2A2C84C8749A5B182348574": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Aggressive Venting",
       "cost": {
         "credits": 8000,
@@ -1443,7 +1443,7 @@
     },
     "BFFE0C3436AC584D890B6EFE9124AAF1": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Thermal Exhaust Feedback",
       "cost": {
         "credits": 7500,
@@ -1457,7 +1457,7 @@
     },
     "532714B803867C4F8AA6EA78FA4EAAEA": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Shield Battery Booster",
       "cost": {
         "credits": 8850,
@@ -1471,7 +1471,7 @@
     },
     "1BD74059739E094BBE0A3B79F2E94B46": {
       "class": "Scout",
-      "weapon": "FIXMEPlasmaCarbine",
+      "weapon": "DRAK-25 Plasma Carbine",
       "name": "Impact Deflection",
       "cost": {
         "credits": 7950,
@@ -1485,7 +1485,7 @@
     },
     "DB02B4E77D43BF44A4749982C0879B77": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Magic Bullets",
       "cost": {
         "credits": 8750,
@@ -1499,7 +1499,7 @@
     },
     "D53F94FBC05E0448B57BC9DF6846267B": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Elephant Rounds",
       "cost": {
         "credits": 7300,
@@ -1513,7 +1513,7 @@
     },
     "CD6993F938E27C49AC69293BF942A8F0": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Homebrew Powder",
       "cost": {
         "credits": 7350,
@@ -1527,7 +1527,7 @@
     },
     "5885A33B15AE844591A66B65A2E5494E": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Chain Hit",
       "cost": {
         "credits": 7300,
@@ -1541,7 +1541,7 @@
     },
     "A937DC3938DEE8418CD0641CCE19B46A": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Six Shooter",
       "cost": {
         "credits": 7750,
@@ -1555,7 +1555,7 @@
     },
     "D1306CBC8421B248A4B95B332DF3E056": {
       "class": "Gunner",
-      "weapon": "'Bulldog' Heavy Revolver",
+      "weapon": "\"Bulldog\" Heavy Revolver",
       "name": "Volatile Bullets",
       "cost": {
         "credits": 7350,
@@ -1569,7 +1569,7 @@
     },
     "EF0CAC2AEF57BD41A72155B4DA395D47": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Shaped Shells",
       "cost": {
         "credits": 7700,
@@ -1583,7 +1583,7 @@
     },
     "0B1A2EC60168C54E9E47CA764C3B70BD": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Jumbo Shells",
       "cost": {
         "credits": 8800,
@@ -1597,7 +1597,7 @@
     },
     "3F68CB7C2FAB2843B1446D133BD92C1D": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Stuffed Shells",
       "cost": {
         "credits": 7850,
@@ -1611,7 +1611,7 @@
     },
     "5F090BB3EFC96F4297F1BFC3F152C663": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Double Barrel",
       "cost": {
         "credits": 7950,
@@ -1625,7 +1625,7 @@
     },
     "FA40EE4A1F8CB04FBFAF916469E4B167": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Compact Shells",
       "cost": {
         "credits": 8550,
@@ -1639,7 +1639,7 @@
     },
     "E6DAF7D6065004439EF966D6FDBD69A6": {
       "class": "Scout",
-      "weapon": "Jury-Rigged Boomstick",
+      "weapon": "Jury-rigged Boomstick",
       "name": "Special Powder",
       "cost": {
         "credits": 7050,
@@ -1653,7 +1653,7 @@
     },
     "05B157A075E0734BB471EF8DAE692865": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "Light-weight Rounds",
       "cost": {
         "credits": 8700,
@@ -1667,7 +1667,7 @@
     },
     "81B842310E01B847BF99774DBC3DC0DD": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "EM Refire Booster",
       "cost": {
         "credits": 8300,
@@ -1681,7 +1681,7 @@
     },
     "13CF1C4A6992924A9AFF5CEAF05B7106": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "Super-Slim Rounds",
       "cost": {
         "credits": 8550,
@@ -1695,7 +1695,7 @@
     },
     "0C1BAA64B03CB94EBB77B7B55E7C6C87": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "Turret EM Discharge",
       "cost": {
         "credits": 8450,
@@ -1709,7 +1709,7 @@
     },
     "3C42DBEA3021EE44AF6D944A91314D75": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "Turret Arc",
       "cost": {
         "credits": 8350,
@@ -1723,7 +1723,7 @@
     },
     "CE9490445B036B49B89DB2BC8D18FD12": {
       "class": "Engineer",
-      "weapon": "'Stubby' Volatic SMG",
+      "weapon": "\"Stubby\" Voltaic SMG",
       "name": "Well Oiled Machine",
       "cost": {
         "credits": 8400,
